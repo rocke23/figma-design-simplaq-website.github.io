@@ -1,0 +1,476 @@
+
+
+<html lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figma practice Website Design</title>
+    <link rel="stylesheet" href="figma_files/style.css">
+    <link href="figma_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="figma_files/font-awesome.min.css">
+<style>
+    .bdr{
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.co-r{
+    color:black;
+    background-color: white;
+    border: black  solid 0.6px;
+}
+
+@media only screen and (max-width: 800px) {
+    .hid{
+        display: none;
+    }
+}
+
+</style></head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo hid">
+                    <div style=" color: #000; font-size: 23px; font-weight: 800; "><img src="figma_files/Logo.png2.png" class="logo" style="width: 28px;float: left;">Simplaq</div>
+                </div>
+                <nav style="left: 25px;position: relative;">
+                    <ul id="MenuItems" style="max-height: 0px;">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Benefits</a></li>
+                        <li><a href="#">Opportunities</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="btn bdr co-r hid">Get a demo</a>
+                <a href="#" class="btn bdr graent-col">Let's talk</a>
+                <img src="figma_files/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <!-- js for toggle menu -->
+                <script>
+                    var MenuItems = document.getElementById("MenuItems");
+                    MenuItems.style.maxHeight = "0px";
+                    function menutoggle(){
+                        if (MenuItems.style.maxHeight == "0px")
+                        {  MenuItems.style.maxHeight = "200px";
+                          MenuItems.style.maxWidth = "300px";
+                          MenuItems.style.marginLeft = "50px";
+                          MenuItems.style.left = "70px";
+                          MenuItems.style.zIndex = "500";
+                          MenuItems.style.position = "fixed";
+                          MenuItems.style.visibility = "visible"
+                          
+
+                        }else{
+                            MenuItems.style.maxHeight = "0px";
+                            MenuItems.style.visibility = "hidden";
+                        };
+                    }
+                </script>
+        </div>
+        
+    </div>
+    <!-- 1s -->
+    <!-- <div class="categories"> -->
+        <div class="div" style="    max-width: 1265px;position: relative;margin: auto;">
+            <div class="row">
+                <div class="col-2" style="padding-left: 0px;position: relative;left: 10%;">
+                    <h1>Shopping Mall <br><span class="gradient">Digitalization Platform</span></h1>
+                    <p style="width: 371px;">Simplaq will transform your mall into omnichannel hub. Know your customers better, do your marketing smarter and manage the all Mall digital channels.</p>
+                    <a href="#" class="btn bdr graent-col" style="align-content: center;">Get a demo</a>
+                    <a href="#" class="btn bdr co-r">See our feature</a>
+                </div>
+                <div class="col-2" style="position: relative;right: 6%;">
+                    <img src="figma_files/Right Side.png">
+                </div>
+            </div>
+        </div>
+        
+        
+    
+
+    <!-- 2s -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="figma_files/Illustration.png">
+                </div>
+                <div class="col-2" style="padding-left: 0px;">
+                    <h1>Easy and convenient management of your shopping mall</h1>
+                    <p>Simplaq is a feature-rich mall management and retail analytics software solution that keeps all your information and communications in one, secure location.</p>
+
+                    <p>Improve operational efficiency, increase sales, optimize marketing and proactively manage all your stores from one location</p>                    
+                </div>                
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- 3s -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="title">
+                <h1>Our <span class="gradient">Solutions</span></h1>
+                <p>Simplaq helps your to collaborate with your tenants easily with our built in functionality.</p>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <img src="figma_files/App2.png">
+                </div>
+                <div class="col-2" style="padding-left: 0px;">
+                    <img src="figma_files/App (1).png" alt="">                    
+                </div>                
+            </div>
+        </div>        
+    </div>
+
+    <!-- 4s -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <h2><span>The features of the portal are</span> adapted to the user as much as possible</h2>
+                    <button class="accordion"><img src="figma_files/Right.png" class="icoi"><p>Mobile technology is easy to use</p></button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion"><img src="figma_files/Right.png" class="icoi"><p>Staying connected with your customers is easy</p></button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion"><img src="figma_files/Right.png" class="icoi"><p>Empowered customers employees and merchants</p></button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion"><img src="figma_files/Right.png" class="icoi"><p>Saved costs and elevated ROI</p></button>
+                    <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                        } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                        } 
+                    });
+                    }
+                    </script>
+                    <style>
+                        .accordion {
+                            background-color: #fff;
+                            color: #444;
+                            cursor: pointer;
+                            padding: 10px;
+                            width: 100%;
+                            border: none;
+                            text-align: left;
+                            display: flex;
+                            align-items: center;
+                            outline: none;
+                            font-size: 19px;
+                            transition: 0.4s;
+                        }
+                        
+                        .active, .accordion:hover {
+                            background-color: #ccc;
+                        }
+                        .accordion .icoi {
+                            max-width: 30px;
+                            max-height: 30px;
+                            padding:0;
+                            margin:0;
+                            transition: all .3s linear;
+                        }
+                        .active .icoi{
+                            transform: rotate(90deg);
+                        }
+                        
+                        .accordion:after {
+                            content: '';
+                            color: #777;
+                            font-weight: bold;
+                            float: right;
+                            margin-left: 5px;
+                        }
+                        
+                        .active:after {
+                            content: "";
+                        }
+                        
+                        .panel {
+                            padding: 0 18px;
+                            background-color: white;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: max-height 0.2s ease-out;
+                        }
+                        .panel p{
+                            max-width: 100%;text-align: left;
+                        }
+                    </style>
+                </div>
+                <div class="col-2">
+                    <div class="newcomp">
+                        <div class="img1" style="position: relative;">
+                            <img src="figma_files/Illustration (2).png" alt="" srcset="" style="max-width: 388px;position:relative; padding-left: 59px;">
+                        <img src="figma_files/Cards - Product.png" alt="" style="max-width: 131px;position: absolute;top: 181px;left: 27px;"></div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!-- 3s -->
+    <div class="categories">
+        <div class="small-container">
+            <div class="tite">
+                <h1>Our customers Says</h1>
+            </div>
+            <div class="row">
+                <div class="col-2" style=" max-width: 460px;">
+                    <img src="figma_files/01-Home5.png" max-width="90%">
+                </div>
+                <div class="col-2" style=" max-width: 460px;">
+                    <img src="figma_files/01-Home5.png" max-width="90%">                    
+                </div>                
+            </div>
+        </div>        
+    </div>
+    
+
+    <!-- testimonial-->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3" style="max-width: 310px;">                    
+                    <div class=""><img src="figma_files/Group 106.png" style="max-width: 206px;margin-bottom: 30px;"></div>
+                    <div class="">
+                        <h1 style="font-size: 17px;">Earn points for every purchase</h1>
+                        <p style="max-width: 264px;">Turn your points into rewards of your choice!</p>
+                    </div>                    
+                </div>
+                <div class="col-3" style="max-width: 310px;">                    
+                    <div class=""><img src="figma_files/Group 106.png" style="max-width: 206px;margin-bottom: 30px;"></div>
+                    <div class="">
+                        <h1 style="font-size: 17px;">Earn points for every purchase</h1>
+                        <p style="max-width: 264px;">Turn your points into rewards of your choice!</p>
+                    </div>                    
+                </div>
+                <div class="col-3" style="max-width: 310px;">                    
+                    <div class=""><img src="figma_files/Group 106.png" style="max-width: 206px;margin-bottom: 30px;"></div>
+                    <div class="">
+                        <h1 style="font-size: 17px;">Earn points for every purchase</h1>
+                        <p style="max-width: 264px;">Turn your points into rewards of your choice!</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn bdr graent-col" style="justify-content: center;position: relative;left: 43%;">Let's Talk</a>
+    </div>
+
+    <!-- 7s -->
+    
+    <div class="categories">
+        <div class="small-container">
+            <div class="tite">
+                <h1>Our customers Says</h1>
+            </div>
+            <div class="row">
+                <div class="col-2" style=" max-width: 460px;">
+                    <h1>Book a <br><span class="gradient">Free Demo</span></h1>
+                    <p style="margin-bottom: 50px;">Discover how our shopping centre management and retail analytics software can transform your business and drive revenue.</p>
+                    <div style="margin-bottom: 25px;">
+                        <p>Email</p>
+                        <p><span class="gradient">hello@Simplaq.com</span></p>
+                    </div>
+                    <div>
+                        <p>Phone number</p>
+                        <p><span class="gradient">Call the shop</span></p>
+                    </div>
+                </div>
+                <div class="col-2" style=" max-width: 460px;">
+                    <form>                      
+                        <input type="text" id="fname" name="firstname" placeholder="Your name">
+                        
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                        <input type="text" id="company name" name="company name" placeholder="Company name">
+                        <input type="number" id="Phone number" name="Phone number" placeholder="Phone number">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+                        
+                        <div class="" style="align-items: flex-start;display: flex;flex-wrap: wrap;flex-direction: column;">
+                            <label class="c">
+                                <input type="checkbox" checked="checked" class="graent-col"> I accept <span class="gradient">Privacy policy</span>
+                                <span class="graent-col"></span>
+                            </label>
+                            <label class="c">
+                                <input type="checkbox" checked="checked"> I accept <span class="gradient">Terms &amp; Conditions</span>
+                                <span class="graent-col"></span>
+                            </label>
+                            <label class="c">
+                                <input type="checkbox" checked="checked"> I want to receive commercial offers from mall &amp; stores
+                                <span class="graent-col"></span>
+                            </label>
+                        </div>
+                        
+                        <input type="submit" value="Submit" class="graent-col" style="padding-left:70px;padding-right:70px;">
+                    </form>                    
+                </div>                
+            </div>
+        </div>
+        <style>
+            /*  form */
+
+            input[type=text], input[type=email], input[type=number], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #fea3ac;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            }
+
+            input[type=submit] {
+            background-color: #fea3ac;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: #45a049;
+            }
+
+            .container-form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            }
+            @media only screen and (min-width: 840px){
+                input[type=text], input[type=email], input[type=number]{
+                    width: 48%;
+                    margin: 1%;
+                    float: left;
+                }
+            }
+        </style>        
+    </div>
+    
+    <div class="footer1" style="background-color: #070907eb;">
+        <div class="">
+            <div class="" style=" display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;padding-left: 17px; padding-right: 17px;">
+                
+            <div style=" color: #fff; font-size: 23px; font-weight: 800; "><img src="figma_files/Logo.png2.png" class="logo" style="width: 28px;float: left;">Simplaq</div>
+                <div>                    
+                    <a href="#" class="btn bdr co-r" style="float: left;
+                    background: transparent;
+                    border: #424346 solid 0.6px;
+                    color: white;
+                    font-size: 15px;">Get a demo</a>
+                    <a href="#" class="btn bdr graent-col" style="float: left;">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+        <div class="diff">
+            <div class="">
+                <ul>
+                    <li>Overview</li>
+                    <li>Features</li>
+                    <li>Benefits</li>
+                </ul>
+            </div>
+            <div class="" id="odo" style="display: flex;justify-content: space-around;">
+                <ul id="od">
+                    <li>Insights</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="" style="font-size: 13px;padding-left: 106px;">customer <span class="gradient2">support</span><br> and help 24/7</div>
+            </div>
+            <div class="">
+                <h1 style="font-size: 11px;margin-top: 10px;margin-bottom: 12px;">Get exclusive offers and weekly updates</h1>
+                <div class="search bar">
+                    <form class="flex-form" style="background: linear-gradient(to right,#232528,#232528,#232528, #232528);flex-basis: 337px;width: 285px;height: 47px;margin-bottom: 16px;border-radius: 39px;">
+                        <label for="from">
+                          <img src="figma_files/Mail.png" alt="" style="transform: translateY(15px)translateX(4px);filter: invert(1);position: absolute;">
+                        </label>
+                        <input type="search" placeholder="  email" style="width: 80%;margin-bottom: 14px;margin-left: 30px;border-style: none;">
+                        <input type="submit" value="Search" class="doj" style="background: #fff;color:#000;width: 120px;height: 47px;position:absolute;transform: translateX(-38px)translateY(-1px);border-radius: 18px;">
+                      </form>
+                      <style>input[type="search"] {
+                        flex-basis: 200px;
+                        height: 43px;
+                        background: linear-gradient(to right,#232528,#232528,#232528, #232528);
+                      }</style>
+                </div>
+                <div class="icons" style="display: flex;justify-content: left;">
+                    <div class=""><img src="figma_files/IcnButton (2).png" alt="" style="margin:2px;max-width: 50px;"></div>                    
+                    <div class=""><img src="figma_files/IcnButton (3).png" alt="" style="margin:2px;max-width: 50px;"></div>                    
+                    <div class=""><img src="figma_files/IcnButton (4).png" alt="" style="margin:2px;max-width: 50px;"></div>                    
+                    <div class=""><img src="figma_files/IcnButton (5).png" alt="" style="margin:2px;max-width: 50px;"></div>                    
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright" style="display: flex;justify-content: space-between;color: #fff;">
+            <div class="" style="font-size: 10px;padding: 10px;">Simplaq| All rights reserved @ 2022</div>
+            <div class="" style="display: flex;">
+                <ul style="display: flex;padding: 10px;font-size: 10px;">
+                    <li style="padding-right: 10x;">Privacy &amp; terms</li>
+                    <li style="padding-left: 10px;">Terms of Services</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <style>
+        .diff{
+            display: flex;color: #fff;justify-content: space-evenly;padding-left: 10px;padding-right: 10px;flex-wrap: wrap;margin-bottom: 70px;
+        }
+        @media only screen and (max-width: 800px){
+            .diff{
+                display: grid;
+                grid-template-columns: auto auto;
+                text-align: left;
+            }
+            #odo{
+                display: grid;
+                grid-template-columns: auto;
+                gap: 5px auto;
+            }
+            #od{
+                display: grid;
+                grid-template-rows: auto auto;
+                gap: 1px;
+            }
+            .footer{
+                display: grid;
+                grid-template-rows: auto auto auto auto;
+                gap: 9px auto;
+            }
+        }
+    </style>
+    
+
+
+</body>
+</html>
